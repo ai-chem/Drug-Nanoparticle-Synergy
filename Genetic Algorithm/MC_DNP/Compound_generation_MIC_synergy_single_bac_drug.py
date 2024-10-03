@@ -13,19 +13,12 @@ df_MIC_Drug_NP_all =df_MIC_Drug_NP_all.drop(['Unnamed: 0','MIC_NP (μg/ml)', 'MI
 df_MIC_NP = pd.read_csv(r'C:\Users\user\Desktop\Synergy_project_2024\data\LP\preprocessed_MIC_NP.csv')
 df_MIC_Drug = pd.read_csv(r'C:\Users\user\Desktop\Synergy_project_2024\data\LP\preprocessed_MIC_drug.csv')
 drug_class = pd.read_csv(r'C:\Users\user\Desktop\Synergy_project_2024\data\raw\descriptors\drug_class.csv')
-# df_MIC_Drug_NP_all =df_MIC_Drug_NP_all.drop([], axis=1)
-bacterial_descriptor = pd.read_csv(
-    r'C:\Users\user\Desktop\Synergy_project_2024\data\raw\descriptors\synergy_bacterial_descriptor.csv')
-drug_descriptor = pd.read_csv(
-    r'C:\Users\user\Desktop\Synergy_project_2024\data\raw\descriptors\synergy_drug_descriptors_2024_version1.csv')
-np_descriptor = pd.read_csv(
-    r'C:\Users\user\Desktop\Synergy_project_2024\data\raw\descriptors\synergy_nanoparticle_descriptors.csv')
+bacterial_descriptor = pd.read_csv(r'C:\Users\user\Desktop\Synergy_project_2024\data\raw\descriptors\synergy_bacterial_descriptor.csv')
+drug_descriptor = pd.read_csv(r'C:\Users\user\Desktop\Synergy_project_2024\data\raw\descriptors\synergy_drug_descriptors_2024_version1.csv')
+np_descriptor = pd.read_csv(r'C:\Users\user\Desktop\Synergy_project_2024\data\raw\descriptors\synergy_nanoparticle_descriptors.csv')
 
 # Merge drug_descriptor with drug_class
 df_MIC_Drug = pd.merge(df_MIC_Drug, drug_class[['Drug', 'Drug_class']], on='Drug', how='left')
-# df_MIC_Drug_NP_all = pd.merge(df_MIC_Drug_NP_all, drug_class[['Drug', 'Drug_class']], on='Drug', how='left')
-
-# print(df_MIC_Drug_NP_all.columns.tolist())
 
 
 # Identify common columns
@@ -34,7 +27,7 @@ np_col_dnp = df_MIC_Drug_NP_all.columns.intersection(np_descriptor.columns).appe
 bac_col_dnp = df_MIC_Drug_NP_all.columns.intersection(bacterial_descriptor.columns)
 # Drop target columns to create feature set X
 X = df_MIC_Drug_NP_all.drop(['MIC_NP_log', 'MIC_drug_log', 'MIC_drug_NP_log'], axis=1)
-# print(X.columns.tolist())
+
 #unique bacteria
 uniq_bacteria_data = X.drop_duplicates('Bacteria')
 uniq_drug_data = X.drop_duplicates('Drug')
@@ -94,9 +87,6 @@ def bacterial_population(df_population):
     df_pathogen.loc[drug_population.index, drug_col_dnp] = drug_population[drug_col_dnp].values
     return df_pathogen
 
-# df = bacterial_population(population(100))
-# df.to_csv('b.csv')
-
 def predict_MIC_of_drug_np(df):
     df_pathogen = bacterial_population(df)
 
@@ -140,8 +130,5 @@ def predict_MIC_of_drug_np(df):
 
 
 # Generate population
-new_population = population(population_size)
-df_nonpathogen = predict_MIC_of_drug_np(new_population)
-# df_nonpathogen.to_csv('new_gen_non.csv')
-
-# print(df_nonpathogen)
+# new_population = population(population_size)
+# df_nonpathogen = predict_MIC_of_drug_np(new_population)

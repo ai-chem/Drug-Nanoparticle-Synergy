@@ -2,6 +2,7 @@ import pandas as pd
 import Model_visualization
 import normal_model
 import Hyperparameter_tuning
+import joblib
 
 df_clean =pd.read_csv(r'C:\Users\user\Desktop\Synergy_project_2024\data\LP\preprocessed_ZOI_NP.csv')
 # df_clean = df_clean[df_clean['ZOI_NP (mm)'] > 5 ]
@@ -20,10 +21,8 @@ best_params = {
     'random_strength': 2.7269252114485725,
     'verbose': 0
 }
-# best_params = {'verbose': 0}
 
 x_train, y_train, model, y_test, test_preds, train_preds = normal_model.model_catboost(df_x, df_y, best_params)
-import joblib
 # Save the model
 joblib_file = r'C:\Users\user\Desktop\Synergy_project_2024\catboost_model_zoi_np.pkl'
 joblib.dump(model, joblib_file)

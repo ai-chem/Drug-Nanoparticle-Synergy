@@ -24,8 +24,6 @@ best_params = {
     'reg_lambda': 3.63736910517587
 }
 
-
-
 x_train, y_train, model, y_test, test_preds, train_preds = normal_model.model_xgboost(df_x, df_y, best_params)
 Model_visualization.scatter_plot(y_train, train_preds, y_test, test_preds, title='XGB Model for MC_drug prediction', save_path='model_xgb_MC_drug_optimized_scatter.png')
 print(x_train.columns)

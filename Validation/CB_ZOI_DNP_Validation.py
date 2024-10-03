@@ -33,7 +33,6 @@ df_val_scaled = data_transform.df_transformer(df_validation[df_x.columns], le_di
 print('Columns in scaled DataFrame:', df_scaled.columns)
 
 # Best parameters
-
 best_params = {
     'depth': 6,
     'learning_rate': 0.05206538586090059,
@@ -56,7 +55,6 @@ val_preds = model.predict(df_val_scaled)
 # Save the model
 # joblib_file = r'C:\Users\user\Desktop\Synergy_project_2024\catboost_model_zoi_drug_np.pkl'
 # joblib.dump(model, joblib_file)
-
 
 def scatter_plot(y_train, y_train_preds, y_test, y_test_preds, y_val, y_val_preds, title='Catboost Model', xlim=(0, 55),
                  ylim=(0, 55), save_path='scatter_plot_catboost.png', val_label='Test'):
@@ -86,9 +84,7 @@ def scatter_plot(y_train, y_train_preds, y_test, y_test_preds, y_val, y_val_pred
     plt.savefig(save_path, transparent=True)
     plt.show()
 
-
 scatter_plot(y_train, train_preds, y_test, test_preds, dfy_val, val_preds)
-
 
 def print_metrics(y_true, y_preds, dataset_name):
     r2 = r2_score(y_true, y_preds)

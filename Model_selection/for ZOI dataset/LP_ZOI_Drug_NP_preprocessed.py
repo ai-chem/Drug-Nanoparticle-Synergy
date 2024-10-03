@@ -4,13 +4,7 @@ from Models import feature_selection
 from Models.old import data_transformer_new
 from sklearn.model_selection import train_test_split
 
-df = pd.read_csv(r'C:\Users\user\Desktop\Synergy_project_2024\Models\filling_missing_values\Final\Final_synergy_ZOI_drug_NP_data_preprocessed_clean_fill_all.csv')
-
-# Filter drugs and references with at least 10 occurrences
-# drug_counts = df['Drug'].value_counts()
-# valid_drugs = drug_counts[drug_counts >= 10].index
-# df_clean = df[df['Drug'].isin(valid_drugs)].reset_index(drop=True)
-df_clean = df
+df_clean = pd.read_csv(r'C:\Users\user\Desktop\Synergy_project_2024\Models\filling_missing_values\Final\Final_synergy_ZOI_drug_NP_data_preprocessed_clean_fill_all.csv')
 df_clean.to_csv('GA_ZOI_drug_NP_data_all_features.csv')
 df_clean = df_clean.drop(['CID','doi', 'Canonical_smiles', 'IdList', 'Kingdom', 'Clade','smile'], axis=1)
 selector = feature_selection.feature_remover(variance_threshold=0.05, correlation_threshold=0.6)
@@ -44,12 +38,3 @@ train,test = clf.fit(X_train, X_test, Y_train, Y_test)
 train_mod = train.iloc[:-0, :]
 # test.to_csv('Model_comparision_processed_ZOI_drug_NP.csv')
 print(train)
-
-
-
-common_columns = [col for col in df.columns if col in df_clean.columns]
-df_cleann = df_clean[common_columns]
-df_cleann.reset_index(drop=True)
-# df_cleann.to_csv('preprocessed_ZOI_drug_NP_filled.csv')
-print(df_cleann.info())
-print(df.columns.tolist())

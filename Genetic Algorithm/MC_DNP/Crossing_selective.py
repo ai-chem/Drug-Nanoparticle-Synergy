@@ -7,10 +7,8 @@ df_MIC_Drug_NP_all = pd.read_csv(r'C:\Users\user\Desktop\Synergy_project_2024\da
 df_MIC_Drug_NP_all =df_MIC_Drug_NP_all.drop(['Unnamed: 0','MIC_NP (μg/ml)', 'MIC_drug (μg/ml)', 'MIC_drug_NP (μg/ml)'], axis=1)
 drug_descriptor = pd.read_csv(r'C:\Users\user\Desktop\Synergy_project_2024\data\raw\descriptors\synergy_drug_descriptors_2024_version1.csv')
 np_descriptor = pd.read_csv(r'C:\Users\user\Desktop\Synergy_project_2024\data\raw\descriptors\synergy_nanoparticle_descriptors.csv')
-# print(np_descriptor.info())
-# random_individual = Compound_generation_MIC_synergy_only.predict_MIC_of_drug_np(Compound_generation_MIC_synergy_only.population(1)).loc[0].values
+
 random_individual = Compound_generation_MIC_synergy_single_bac_drug.predict_MIC_of_drug_np(Compound_generation_MIC_synergy_single_bac_drug.bacterial_population(Compound_generation_MIC_synergy_single_bac_drug.population(10))).loc[0].values
-# columns
 drug_col_dnp = df_MIC_Drug_NP_all.columns.intersection(drug_descriptor.columns)
 np_col_dnp = df_MIC_Drug_NP_all.columns.intersection(np_descriptor.columns).append(pd.Index(['reference']))
 
@@ -71,7 +69,6 @@ def perform_evolution(df_MIC_Drug_NP_all, cross_over_frequency, mutation_frequen
 
     # Perform crossover and mutation on NumPy array except for top 5
     for i in range(5,len(data_array)):
-        # Select the current row
         row1 = data_array[i]
 
         # Select a random row from the remaining rows
@@ -94,13 +91,4 @@ def perform_evolution(df_MIC_Drug_NP_all, cross_over_frequency, mutation_frequen
     # Convert the modified NumPy array back to a DataFrame
     df_new = pd.DataFrame(data_array, columns=columns)
     df_new = df_new.sort_values('Fitness', ascending=False)
-
     return df_new
-
-
-# Call the function to perform evolution
-# df_evolved = perform_evolution(df_MIC_Drug_NP_all, 0.5, 0.5)
-# print('here',df_evolved)
-
-# Save the new DataFrame to a new CSV file
-# df_evolved.to_csv(r'C:\Users\user\Desktop\Synergy_project_2024\GA\mic_dnp_all_with_feature_updated.csv', index=False)

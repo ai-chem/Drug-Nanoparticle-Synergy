@@ -42,7 +42,6 @@ def feature_importance_plot(model, X_train, cols, title='Feature Importance', sa
     custom_palette = sns.color_palette("Blues_r", n_colors=len(feature_importance_df))
     selected_feature_importance = feature_importance_df[feature_importance_df['Feature'].isin(cols)]
 
-
     # Plotting feature importance with custom color gradient
     plt.figure(figsize=(8, 8))
     sns.barplot(x='Importance', y='Feature', data=selected_feature_importance, palette=custom_palette)

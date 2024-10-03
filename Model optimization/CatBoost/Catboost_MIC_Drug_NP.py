@@ -9,7 +9,6 @@ df_x = df.drop(['Unnamed: 0','MIC_drug_NP_log','reference'], axis=1)
 df_y = df[['MIC_drug_NP_log']].copy()
 
 # best_params = Hyperparameter_tuning.optimization(df_x, df_y)
-
 best_params = {
     'depth': 4,
     'learning_rate': 0.06917460360259758,
@@ -20,11 +19,6 @@ best_params = {
     'l2_leaf_reg': 8.784429474739879,
     'random_strength': 1.0939467490981523
 }
-
-
-
-
-
 x_train, y_train, model, y_test, test_preds, train_preds = normal_model.model_catboost(df_x, df_y, best_params)
 
 Model_visualization.scatter_plot(y_train, train_preds, y_test, test_preds, xlim=(-5, 7), ylim=(-5, 7), title='Catboost Model for MC_Drug_NP prediction', save_path='model_catboost_MC_Drug_NP_optimized_scatter.png')

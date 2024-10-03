@@ -11,7 +11,6 @@ Cat_model_drug_path = r'C:\Users\user\Desktop\Synergy_project_2024\xgb_model_mic
 Cat_model_drug_np_path = r'C:\Users\user\Desktop\Synergy_project_2024\catboost_model_mic_drug_np.pkl'
 
 def model_load(path):
-    """Load a model from a specified path using joblib."""
     return joblib.load(path)
 
 # Load models

@@ -18,11 +18,9 @@ def new_generations(Gen, population_size):
     new_gen = new_gen.sort_values('Fitness', ascending=False)
     new_gen.reset_index(drop=True, inplace=True)
     return new_gen
-# print(new_generations(Compound_generation.population(100), 100))
+
 def Genetic_Algorithm(generation_number, population_size):
     Generation1 = Compound_generation_MIC_synergy_single_bac_drug.predict_MIC_of_drug_np(Compound_generation_MIC_synergy_single_bac_drug.population(population_size)).sort_values('Fitness', ascending=False)
-
-    # Generation1 = V4_ga_compd_generation.fitness(V4_ga_compd_generation.population(population_size)).sort_values('Fitness', ascending=False)
     mean1 = Generation1['Fitness'].mean()
     max1 = Generation1['Fitness'].max()
     Generation1.to_csv('output/bacteria_sel/pop_size_' + str(population_size) + '_Generation_1.csv')
@@ -54,9 +52,9 @@ def final_loop():
     gen_col = []
     time_all = []
     gen = 70
-    while gen <= 70:  # Corrected loop condition
+    while gen <= 70:
         population_size = 10
-        while population_size <= 100:  # Corrected loop condition
+        while population_size <= 100:
             st = time.time()
             Genetic_Algorithm(gen, population_size)
             gen_col.append(gen)

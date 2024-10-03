@@ -17,7 +17,6 @@ df_x = df_clean.drop(['Unnamed: 0', 'MIC_log', 'MIC_NP (μg/ml)', 'reference'], 
 df_y = df_clean[['MIC_log']].copy()
 
 def optimization(df_x, df_y):
-
     # Convert categorical values into numerical
     oe = OrdinalEncoder()
     categorical_features = df_x.select_dtypes(include=['object']).columns
@@ -45,9 +44,7 @@ def optimization(df_x, df_y):
         for train_indices, test_indices in cv.split(df_x, df_y):
             x_train, x_test = df_x.iloc[train_indices], df_x.iloc[test_indices]
             y_train, y_test = df_y.iloc[train_indices], df_y.iloc[test_indices]
-
             model.fit(x_train, y_train, silent=True)
-
             pred_test = model.predict(x_test)
             mse = mean_squared_error(y_test, pred_test)
             # cv_scores.append(mse)

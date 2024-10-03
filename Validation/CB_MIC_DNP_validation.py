@@ -8,7 +8,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import joblib
 df = pd.read_csv(r'C:\Users\user\Desktop\Synergy_project_2024\data\LP\preprocessed_MIC_drug_NP_filled_final.csv')
-# df = pd.read_csv(r'C:\Users\user\Desktop\Synergy_project_2024\Models\filling_missing_values\Final\Final_synergy_MC_drug_NP_data_preprocessed_clean_fill_all.csv')
 df_validation = pd.read_csv(r'C:\Users\user\Desktop\Synergy_project_2024\Models\filling_missing_values\Final\Final_synergy_MC_drug_NP_data_preprocessed_clean_validation_set_with_pred_mic_np+drug.csv')
 dc = pd.read_csv(r'C:\Users\user\Desktop\Synergy_project_2024\data\raw\descriptors\drug_class.csv')
 df_validation = pd.merge(df_validation, dc[['Drug', 'Drug_class']], on='Drug', how='left')
@@ -46,8 +45,6 @@ best_params = {
     'l2_leaf_reg': 8.784429474739879,
     'random_strength': 1.0939467490981523
 }
-
-
 
 x_train, x_test, y_train, y_test = train_test_split(df_scaled, df_y, test_size=0.2, random_state=42)
 model = CatBoostRegressor(**best_params)
@@ -101,7 +98,6 @@ def print_metrics(y_true, y_preds, dataset_name):
     print(f'MAE: {mae:.4f}')
     print(f'MSE: {mse:.4f}')
     print(f'RMSE: {rmse:.4f}\n')
-
 
 # Print metrics for train, test, and validation sets
 print_metrics(y_train, train_preds, 'Train')

@@ -42,7 +42,6 @@ def feature_importance_plot(model, X_train, cols, title='Feature Importance', sa
     custom_palette = sns.color_palette("Blues_r", n_colors=len(feature_importance_df))
     selected_feature_importance = feature_importance_df[feature_importance_df['Feature'].isin(cols)]
 
-
     # Plotting feature importance with custom color gradient
     plt.figure(figsize=(8, 8))
     sns.barplot(x='Importance', y='Feature', data=selected_feature_importance, palette=custom_palette)
@@ -70,29 +69,3 @@ def shap_summary_plot(model, X_train, cols, save_path='shap_summary_plot.png'):
 
     plt.savefig(save_path, transparent=True)
     plt.show()
-
-# def shap_summary_plot(model, X_train, cols, save_path='shap_summary_plot.png', top_n=5):
-#     X_importance = X_train
-#     selected_X_importance = X_importance[cols]
-#     explainer = shap.TreeExplainer(model)
-#     shap_values = explainer.shap_values(X_importance)
-#     selected_shap_values = shap_values[:, X_importance.columns.isin(cols)]
-#
-#     # Compute mean absolute SHAP values for each feature
-#     mean_abs_shap = np.mean(np.abs(selected_shap_values), axis=0)
-#
-#     # Get indices of top N features
-#     top_indices = np.argsort(mean_abs_shap)[-top_n:]
-#
-#     # Select only the top N features
-#     top_selected_shap_values = selected_shap_values[:, top_indices]
-#     top_selected_X_importance = selected_X_importance.iloc[:, top_indices]
-#
-#     # Create the SHAP summary plot
-#     shap.summary_plot(top_selected_shap_values, top_selected_X_importance, show=False)
-#     plt.gcf().set_size_inches(8, 8)
-#     plt.tight_layout()  # Ensures plots are properly arranged
-#
-#     plt.savefig(save_path, transparent=True)
-#     plt.show()
-#

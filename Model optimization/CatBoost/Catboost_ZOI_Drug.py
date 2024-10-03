@@ -10,21 +10,11 @@ df_clean = pd.read_csv(r'C:\Users\user\Desktop\Synergy_project_2024\data\LP\prep
 dc = pd.read_csv(r'C:\Users\user\Desktop\Synergy_project_2024\data\raw\descriptors\drug_class.csv')
 df_clean = pd.merge(df_clean, dc[['Drug', 'Drug_class']], on='Drug', how='left')
 
-# # Filter drugs and references with at least 10 occurrences
-# drug_counts = df_clean['Drug'].value_counts()
-# valid_drugs = drug_counts[drug_counts >= 15].index
-# df_clean = df_clean[df_clean['Drug'].isin(valid_drugs)].reset_index(drop=True)
-#
-# ref_counts = df_clean['reference'].value_counts()
-# valid_ref = ref_counts[ref_counts >= 10].index
-# df_clean = df_clean[df_clean['reference'].isin(valid_ref)].reset_index(drop=True)
-
 # Prepare features and target
 df_x = df_clean.drop(['Unnamed: 0', 'ZOI_drug (mm)'], axis=1)
 df_y = df_clean[['ZOI_drug (mm)']].copy()
 
 # best_params = Hyperparameter_tuning.optimization(df_x, df_y)
-
 best_params = {
     'depth': 7,
     'learning_rate': 0.12033389024969879,
@@ -36,7 +26,6 @@ best_params = {
     'random_strength': 0.8805633875696363,
     'verbose': 0
 }
-
 
 # best_params = {'verbose': 0}
 x_train, y_train, model, y_test, test_preds, train_preds = normal_model.model_catboost(df_x, df_y, best_params)
