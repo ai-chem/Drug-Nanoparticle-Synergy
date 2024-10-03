@@ -7,11 +7,11 @@ Antibiotic resistance is a critical global public health challenge, driven by th
 
 **Guidelines**
 
-This repository contains all the necessary files for screening synergistic antimicrobial NP and drug combinations. The repository includes folders for data, model selection, model optimization, validation, and genetic algorithms.
+This repository contains all the necessary files for screening synergistic antimicrobial NP and drug combinations. The repository includes folders for `data`, `model selection`, `model optimization`, `validation`, and `genetic algorithms`.
 
 **Data**
 
-The data folder contains both raw and preprocessed data. Each contains two groups of datasets. The first group targets minimal concentration (MC), including parameters such as MIC, MBC, MTC, MFC, MBEC, and MBIC. This group is divided into three subsets for predicting MC in nanoparticles (MC_NP), drugs (MC_Drug), and their combinations (MC_Drug_NP). The second group focuses on the zone of inhibition (ZOI), measured using disk or well diffusion methods, and is similarly divided into three subsets for predicting ZOI in nanoparticles (ZOI_NP), drugs (ZOI_Drug), and their combinations (ZOI_Drug_NP). Additionally, this folder contains datasets for validation.
+The `data` folder contains both raw and preprocessed data. Each contains two groups of datasets. The first group targets minimal concentration (MC), including parameters such as MIC, MBC, MTC, MFC, MBEC, and MBIC. This group is divided into three subsets for predicting MC in nanoparticles (MC_NP), drugs (MC_Drug), and their combinations (MC_Drug_NP). The second group focuses on the zone of inhibition (ZOI), measured using disk or well diffusion methods, and is similarly divided into three subsets for predicting ZOI in nanoparticles (ZOI_NP), drugs (ZOI_Drug), and their combinations (ZOI_Drug_NP). Additionally, this folder contains datasets for validation.
 
 **Machine Learning**
 
