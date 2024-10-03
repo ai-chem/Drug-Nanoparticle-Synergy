@@ -1,0 +1,65 @@
+,IdList,Bacteria,Kingdom,Clade,Phylum,Class,Order,Family,Genus,Superkingdom,Species,bac_type,gram,"min_Incub_period, h","avg_Incub_period, h","max_Incub_period, h","growth_temp, C",biosafety_level,isolated_from
+0,['562'],Escherichia coli,,,Pseudomonadota,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Escherichia,Bacteria,Escherichia coli,pathogenic,n,48,84,120,37,2,urine
+1,['90370'],Salmonella typhi,,,Pseudomonadota,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Salmonella,Bacteria,Salmonella enterica subsp. enterica serovar Typhi,pathogenic,n,168,252,336,37,2,blood
+2,['1280'],Staphylococcus aureus,,Terrabacteria group,Bacillota,Bacilli,Bacillales,Staphylococcaceae,Staphylococcus,Bacteria,Staphylococcus aureus,pathogenic,p,24,36,48,37,2,skin
+3,['1270'],Micrococcus luteus,,Terrabacteria group,Actinomycetota,Actinomycetes,Micrococcales,Micrococcaceae,Micrococcus,Bacteria,Micrococcus luteus,opportunistic pathogen,p,240,288,336,30,1,soil
+4,['287'],Pseudomonas aeruginosa,,,Pseudomonadota,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Bacteria,Pseudomonas aeruginosa,opportunistic pathogen,n,24,48,72,37,2,soil
+5,['1351'],Enterococcus faecalis,,Terrabacteria group,Bacillota,Bacilli,Lactobacillales,Enterococcaceae,Enterococcus,Bacteria,Enterococcus faecalis,pathogenic,p,24,36,48,37,2,urine
+6,['470'],Acinetobacter baumannii,,,Pseudomonadota,Gammaproteobacteria,Moraxellales,Moraxellaceae,Acinetobacter,Bacteria,Acinetobacter baumannii,pathogenic,n,24,36,48,37,2,urine
+7,['573'],Klebsiella pneumoniae,,,Pseudomonadota,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Klebsiella,Bacteria,Klebsiella pneumoniae,opportunistic pathogen,n,24,48,72,30,2,respiratory tract
+8,['28901'],Salmonella enterica,,,Pseudomonadota,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Salmonella,Bacteria,Salmonella enterica,pathogenic,n,12,42,72,37,2,food
+9,['715'],Actinobacillus pleuropneumoniae,,,Pseudomonadota,Gammaproteobacteria,Pasteurellales,Pasteurellaceae,Actinobacillus,Bacteria,Actinobacillus pleuropneumoniae,opportunistic pathogen,n,24,36,48,37,2,lungs
+10,['747'],Pasteurella Multocida,,,Pseudomonadota,Gammaproteobacteria,Pasteurellales,Pasteurellaceae,Pasteurella,Bacteria,Pasteurella multocida,opportunistic pathogen,n,12,18,24,37,2,lungs
+11,['1349'],Streptococcus uberis,,Terrabacteria group,Bacillota,Bacilli,Lactobacillales,Streptococcaceae,Streptococcus,Bacteria,Streptococcus uberis,pathogenic,p,24,36,48,37,2,mammary gland
+12,['1352'],Enterococcus faecium,,Terrabacteria group,Bacillota,Bacilli,Lactobacillales,Enterococcaceae,Enterococcus,Bacteria,Enterococcus faecium,opportunistic pathogen,p,24,36,48,37,2,blood
+13,['1309'],Streptococcus mutans,,Terrabacteria group,Bacillota,Bacilli,Lactobacillales,Streptococcaceae,Streptococcus,Bacteria,Streptococcus mutans,pathogenic,p,24,36,48,37,2,carious dentine
+14,['1045010'],Escherichia coli O157,,,Pseudomonadota,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Escherichia,Bacteria,Escherichia coli O157,pathogenic,n,48,84,120,37,2,urine
+15,['550'],Enterobacter cloacae,,,Pseudomonadota,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Enterobacter,Bacteria,Enterobacter cloacae,opportunistic pathogen,n,12,42,72,30,2,water
+16,['727'],Haemophilus influenzae,,,Pseudomonadota,Gammaproteobacteria,Pasteurellales,Pasteurellaceae,Haemophilus,Bacteria,Haemophilus influenzae,pathogenic,n,24,36,48,37,2,respiratory tract
+17,['488'],Neisseria mucosa,,,Pseudomonadota,Betaproteobacteria,Neisseriales,Neisseriaceae,Neisseria,Bacteria,Neisseria mucosa,opportunistic pathogen,n,24,36,48,30,2,sputum
+18,['584'],Proteus mirabilis,,,Pseudomonadota,Gammaproteobacteria,Enterobacterales,Morganellaceae,Proteus,Bacteria,Proteus mirabilis,pathogenic,n,24,48,72,37,2,urine
+19,['618'],Serratia odorifera,,,Pseudomonadota,Gammaproteobacteria,Enterobacterales,Yersiniaceae,Serratia,Bacteria,Serratia odorifera,opportunistic pathogen,n,6,24,120,30,1,soil
+20,['670'],Vibrio parahaemolyticus,,,Pseudomonadota,Gammaproteobacteria,Vibrionales,Vibrionaceae,Vibrio,Bacteria,Vibrio parahaemolyticus,pathogenic,n,8,16,24,30,2,water
+21,['1423'],Bacillus subtilis,,Terrabacteria group,Bacillota,Bacilli,Bacillales,Bacillaceae,Bacillus,Bacteria,Bacillus subtilis,non-pathogenic,p,0.16,7.08,14,30,1,soil
+22,['198620'],Pseudomonas koreensis,,,Pseudomonadota,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Pseudomonas,Bacteria,Pseudomonas koreensis,opportunistic pathogen,n,24,36,48,30,1,soil
+23,['1396'],Bacillus cereus,,Terrabacteria group,Bacillota,Bacilli,Bacillales,Bacillaceae,Bacillus,Bacteria,Bacillus cereus,pathogenic,p,4,10,16,30,2,food
+24,['1639'],Listeria monocytogenes,,Terrabacteria group,Bacillota,Bacilli,Bacillales,Listeriaceae,Listeria,Bacteria,Listeria monocytogenes,pathogenic,p,24,36,48,37,2,food
+25,['90371'],Salmonella typhimurium,,,Pseudomonadota,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Salmonella,Bacteria,Salmonella enterica subsp. enterica serovar Typhimurium,pathogenic,n,6,39,72,37,2,meat
+26,['5476'],Candida albicans,Fungi,Opisthokonta,Ascomycota,Saccharomycetes,Saccharomycetales,Debaryomycetaceae,Candida,Eukaryota,Candida albicans,pathogenic,f,48,84,120,37,2,mouth
+27,['5478'],Candida glabrata,Fungi,Opisthokonta,Ascomycota,Saccharomycetes,Saccharomycetales,Saccharomycetaceae,Nakaseomyces,Eukaryota,Nakaseomyces glabratus,opportunistic pathogen,f,24,36,48,37,2,blood
+28,['46361'],Starmerella geochares,Fungi,Opisthokonta,Ascomycota,Saccharomycetes,Saccharomycetales,,Starmerella,Eukaryota,Starmerella geochares,,,,,,,,
+29,['45582'],Candida saitoana,Fungi,Opisthokonta,Ascomycota,Saccharomycetes,Saccharomycetales,Debaryomycetaceae,,Eukaryota,[Candida] saitoana,non-pathogenic,f,48,84,120,37,1,food
+30,['576'],Klebsiella sp.,,,Pseudomonadota,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Klebsiella,Bacteria,Klebsiella sp.,opportunistic pathogen,n,24,48,72,37,2,respiratory tract
+31,['229037'],Proteus sp.,,,Pseudomonadota,Gammaproteobacteria,Enterobacterales,Morganellaceae,Proteus,Bacteria,Proteus sp. (in: enterobacteria),opportunistic pathogen,n,24,48,72,37,2,soil
+32,['1282'],Staphylococcus epidermidis,,Terrabacteria group,Bacillota,Bacilli,Bacillales,Staphylococcaceae,Staphylococcus,Bacteria,Staphylococcus epidermidis,opportunistic pathogen,p,24,36,48,37,2,nose
+33,['666'],Vibrio cholerae,,,Pseudomonadota,Gammaproteobacteria,Vibrionales,Vibrionaceae,Vibrio,Bacteria,Vibrio cholerae,pathogenic,n,48,60,72,30,2,water
+34,['585'],Proteus vulgaris,,,Pseudomonadota,Gammaproteobacteria,Enterobacterales,Morganellaceae,Proteus,Bacteria,Proteus vulgaris,opportunistic pathogen,n,24,48,72,30,2,soil
+35,['54388'],Salmonella paratyphi,,,Pseudomonadota,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Salmonella,Bacteria,Salmonella enterica subsp. enterica serovar Paratyphi A,pathogenic,n,6,24,168,37,2,food
+36,['1313'],Streptococcus pneumoniae,,Terrabacteria group,Bacillota,Bacilli,Lactobacillales,Streptococcaceae,Streptococcus,Bacteria,Streptococcus pneumoniae,pathogenic,p,24,48,168,37,3,respiratory tract
+37,['615'],Serratia marcescens,,,Pseudomonadota,Gammaproteobacteria,Enterobacterales,Yersiniaceae,Serratia,Bacteria,Serratia marcescens,opportunistic pathogen,n,2,7,12,30,2,water
+38,['29385'],Staphylococcus saprophyticus,,Terrabacteria group,Bacillota,Bacilli,Bacillales,Staphylococcaceae,Staphylococcus,Bacteria,Staphylococcus saprophyticus,pathogenic,p,18,21,24,30,2,urine
+39,['548'],Klebsiella aerogenes,,,Pseudomonadota,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Klebsiella,Bacteria,Klebsiella aerogenes,opportunistic pathogen,n,24,36,48,30,2,water
+40,['624'],Shigella sonnei,,,Pseudomonadota,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Shigella,Bacteria,Shigella sonnei,pathogenic,n,12,54,96,37,2,water
+41,['55194'],Malassezia furfur,Fungi,Opisthokonta,Basidiomycota,Malasseziomycetes,Malasseziales,Malasseziaceae,Malassezia,Eukaryota,Malassezia furfur,opportunistic pathogen,f,24,24,24,35,1,skin
+42,['292'],Burkholderia cepacia,,,Pseudomonadota,Betaproteobacteria,Burkholderiales,Burkholderiaceae,Burkholderia,Bacteria,Burkholderia cepacia,opportunistic pathogen,n,24,48,168,35,2,soil
+43,['40324'],Stenotrophomonas maltophilia,,,Pseudomonadota,Gammaproteobacteria,Lysobacterales,Lysobacteraceae,Stenotrophomonas,Bacteria,Stenotrophomonas maltophilia,opportunistic pathogen,n,24,48,168,35,2,soil
+44,['4932'],Saccharomyces cerevisiae,Fungi,Opisthokonta,Ascomycota,Saccharomycetes,Saccharomycetales,Saccharomycetaceae,Saccharomyces,Eukaryota,Saccharomyces cerevisiae,non-pathogenic,f,2,24,72,27,1,food
+45,['5061'],Aspergillus niger,Fungi,Opisthokonta,Ascomycota,Eurotiomycetes,Eurotiales,Aspergillaceae,Aspergillus,Eukaryota,Aspergillus niger,pathogenic,f,24,36,48,30,1,soil
+46,['5059'],Aspergillus flavus,Fungi,Opisthokonta,Ascomycota,Eurotiomycetes,Eurotiales,Aspergillaceae,Aspergillus,Eukaryota,Aspergillus flavus,opportunistic pathogen,f,24,36,48,37,2,soil
+47,['5482'],candida tropicalis,Fungi,Opisthokonta,Ascomycota,Saccharomycetes,Saccharomycetales,Debaryomycetaceae,Candida,Eukaryota,Candida tropicalis,opportunistic pathogen,p,24,48,168,30,2,skin
+48,['1303'],Streptococcus oralis,,Terrabacteria group,Bacillota,Bacilli,Lactobacillales,Streptococcaceae,Streptococcus,Bacteria,Streptococcus oralis,opportunistic pathogen,p,24,48,168,35,2,respiratory tract
+49,['644'],Aeromonas hydrophila,,,Pseudomonadota,Gammaproteobacteria,Aeromonadales,Aeromonadaceae,Aeromonas,Bacteria,Aeromonas hydrophila,opportunistic pathogen,n,6,24,7,30,3,water
+50,['1314'],Streptococcus pyogenes,,Terrabacteria group,Bacillota,Bacilli,Lactobacillales,Streptococcaceae,Streptococcus,Bacteria,Streptococcus pyogenes,pathogenic,p,24,36,48,37,2,mouth
+51,['571'],Klebsiella oxytoca,,,Pseudomonadota,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Klebsiella,Bacteria,Klebsiella oxytoca,opportunistic pathogen,n,6,24,168,30,2,soil
+52,['36651'],Penicillium digitatum,Fungi,Opisthokonta,Ascomycota,Eurotiomycetes,Eurotiales,Aspergillaceae,Penicillium,Eukaryota,Penicillium digitatum,opportunistic pathogen,f,24,24,24,20,1,soil
+53,['622'],Shigella dysenteriae,,,Pseudomonadota,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Shigella,Bacteria,Shigella dysenteriae,pathogenic,n,24,48,168,37,2,food
+54,['1716'],Corynebacterium,,Terrabacteria group,Actinomycetota,Actinomycetes,Mycobacteriales,Corynebacteriaceae,,Bacteria,Corynebacterium,non-pathogenic,p,24,48,168,35,2,skin
+55,['5482'],Candida tropicalis,Fungi,Opisthokonta,Ascomycota,Saccharomycetes,Saccharomycetales,Debaryomycetaceae,Candida,Eukaryota,Candida tropicalis,opportunistic pathogen,p,24,48,168,30,2,skin
+56,['1282'],Staphylococcus epidermidis ,,Terrabacteria group,Bacillota,Bacilli,Bacillales,Staphylococcaceae,Staphylococcus,Bacteria,Staphylococcus epidermidis,non-pathogenic,p,24,48,168,35,2,skin
+57,['1283'],Staphylococcus haemolyticus,,Terrabacteria group,Bacillota,Bacilli,Bacillales,Staphylococcaceae,Staphylococcus,Bacteria,Staphylococcus haemolyticus,non-pathogenic,p,24,48,168,35,2,skin
+58,['1307'],Streptococcus suis,,Terrabacteria group,Bacillota,Bacilli,Lactobacillales,Streptococcaceae,Streptococcus,Bacteria,Streptococcus suis,pathogenic,p,24,48,168,37,1,meat
+59,['672'],Vibrio vulnificus,,,Pseudomonadota,Gammaproteobacteria,Vibrionales,Vibrionaceae,Vibrio,Bacteria,Vibrio vulnificus,pathogenic,n,24,48,168,25,2,water
+60,['13689'],Sphingomonas paucimobilis,,,Pseudomonadota,Alphaproteobacteria,Sphingomonadales,Sphingomonadaceae,Sphingomonas,Bacteria,Sphingomonas paucimobilis,opportunistic pathogen,n,6,24,168,30,2,soil
+61,['523103'],Trichophyton mentagrophytes,Fungi,Opisthokonta,Ascomycota,Eurotiomycetes,Onygenales,Arthrodermataceae,Trichophyton,Eukaryota,Trichophyton mentagrophytes,pathogenic,f,24,24,24,27,1,skin
+62,['5207'],Cryptococcus neoformans,Fungi,Opisthokonta,Basidiomycota,Tremellomycetes,Tremellales,Cryptococcaceae,Cryptococcus,Eukaryota,Cryptococcus neoformans,pathogenic,f,24,24,24,30,2,soil
+64,['631'],Yersinia intermedia,,,Pseudomonadota,Gammaproteobacteria,Enterobacterales,Yersiniaceae,Yersinia,Bacteria,Yersinia intermedia,pathogenic,n,24,48,240,30,2,water
