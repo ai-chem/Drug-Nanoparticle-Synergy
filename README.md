@@ -1,4 +1,4 @@
-![](Figure_1 V4.png)
+![](/Figure_1 V4.png)
 # Drug-Nanoparticle-Synergy
 
 **Abstract**
