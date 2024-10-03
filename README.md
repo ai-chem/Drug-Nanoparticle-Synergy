@@ -12,12 +12,12 @@ This repository contains all the necessary files for screening synergistic antim
 
 **Data**
 
-The `data` folder contains both raw and preprocessed data. Each contains two groups of datasets. The first group targets minimal concentration (MC), including parameters such as MIC, MBC, MTC, MFC, MBEC, and MBIC. This group is divided into three subsets for predicting MC in nanoparticles (MC_NP), drugs (MC_Drug), and their combinations (MC_Drug_NP). The second group focuses on the zone of inhibition (ZOI), measured using disk or well diffusion methods, and is similarly divided into three subsets for predicting ZOI in nanoparticles (ZOI_NP), drugs (ZOI_Drug), and their combinations (ZOI_Drug_NP). Additionally, this folder contains datasets for validation.
+The `data` folder contains raw and preprocessed data each separated into two groups of datasets. The target parameter of first group is minimal concentration (MC), which include parameters such as MIC, MBC, MTC, MFC, MBEC, and MBIC. This group is divided into three subsets for predicting MC of nanoparticles (MC_NP), drugs (MC_Drug), and their combinations (MC_Drug_NP). The second group focuses on the zone of inhibition (ZOI), measured by disk or well diffusion methods, and is similarly divided into three subsets for predicting ZOI of nanoparticles (ZOI_NP), drugs (ZOI_Drug), and their combinations (ZOI_Drug_NP). Additionally, this folder contains datasets for validation.
 
 **Machine Learning**
 
 **Model Selection:**  
-We evaluated the performance of 43 different regression models on raw and processed datasets to predict MC of NP, drugs, and drug-NP cocktails, as well as to predict ZOI of NP, drugs, and drug-NP cocktails. The Python scripts are present in the `Model Selection` folder, and results are stored as CSV files in their respective folders.
+We evaluated the performance of 43 different regression models on raw and processed datasets by predicting MC of NPs, drugs, and drug-NPs cocktail, as well as to predict ZOI of NPs, drugs, and drug-NPs cocktail. The Python scripts are present in the `Model Selection` folder, and results are stored as CSV files in their respective folders.
 
 **Model Optimization:**  
 Top models obtained from model selection were optimized by hyperparameter tuning to identify the best parameters. CatBoost and XGB regressor models showed the best performance after optimization and were used for predicting MC of NPs, drugs, and drug-NP cocktails, as well as for predicting ZOI of NPs, drugs, and drug-NP cocktails. Optimized models are stored in the `Model Optimization` folder.
@@ -27,4 +27,4 @@ Top models obtained from model selection were optimized by hyperparameter tuning
 
 **Genetic Algorithm**
 
-To identify synergistic antimicrobial NPs, the script for the genetic algorithm is stored in the `Genetic Algorithm` folder. It consists of subfolders `MC_DNP` and `ZOI_DNP`, each containing necessary datasets and Python scripts for unique compound generation, crossover and mutation, and a main script (`Genetic_Algorithm_selective.py`) for evolution up to a user-defined population size and generation number. The optimized models were used to predict synergistic activity in these generated unique compounds. The best drug-NP combinations were selected by identifying compounds with the highest fitness scores, and an example of screening candidates is stored in the `Results` folder.
+To identify synergistic antimicrobial NPs, the script for the genetic algorithm is stored in the `Genetic Algorithm` folder. It consists of subfolders `MC_DNP` and `ZOI_DNP`, each containing necessary datasets and Python scripts for unique compound generation, crossover and mutation, and a main script (`Genetic_Algorithm_selective.py`) for evolution up to user-defined population size and generation number. The optimized models were used to predict synergistic activity in these generated unique compounds. The best drug-NP combinations were selected by identifying compounds with the highest fitness scores, and an example of screening candidates is stored in the `Results` folder.
