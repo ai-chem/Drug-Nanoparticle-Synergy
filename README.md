@@ -4,7 +4,7 @@
 **Abstract**
 
 Antibiotic resistance is a critical global public health challenge, driven by the limited discovery of novel antibiotics, the rapid evolution of resistance mechanisms, and persistent infections that compromise treatment efficacy. Combination therapies using antibiotics and nanoparticles (NPs) offer a promising solution, particularly against multidrug-resistant (MDR) bacteria. This study introduces an innovative approach to identifying synergistic drug-NP combinations with enhanced antimicrobial activity. We compiled two groups of datasets to predict the minimal concentration (MC) and zone of inhibition (ZOI) for various drug-NP combinations. CatBoost regression models achieved the best 10-fold cross-validation R² scores of 0.86 and 0.77, respectively. We then adopted a machine learning (ML)-reinforced genetic algorithm (GA) to identify synergistic antimicrobial NPs. The proposed approach was first validated by reproducing previous experimental results. As a proof of concept for discovering new drug-NP combinations, Au NPs were identified as highly synergistic when paired with chloramphenicol, achieving a minimum bactericidal concentration (MBC) of 71.74 ng/ml against *Salmonella typhimurium*, with a fractional inhibitory concentration index of 6.23 × 10⁻³. These findings present a novel and effective strategy for identifying synergistic drug-NP combinations, providing a promising approach to combating drug-resistant pathogens and advancing targeted antimicrobial therapies.
-![](/Figure_1 V4.png)
+![](/Figure.png)
 
 **Guidelines**
 
